@@ -10,7 +10,7 @@
         <input type="text" v-model="manga">
         <br>
         <button class="light-blue lighten-1" @click="agregar">Agregar manga</button>
-        <label >Agregaste un total {{totalMangas}}</label>
+        <!-- <label >Agregaste un total {{totalMangas}}</label> -->
         <br>
         <ul>
             <li v-for="manga in mangas" v-bind:key="manga">{{manga}}</li>
@@ -28,7 +28,7 @@ export default {
             res: 0,
             manga: '',
             mangas: [],
-            totalMangas: 0
+            // totalMangas: 0
         }
     },
     methods: {
@@ -38,11 +38,11 @@ export default {
        agregar() {
            this.mangas.push(this.manga);
            this.manga = '';
-           this.calcular();
+        //    this.calcular();
        },
-       calcular() {
-           this.totalMangas = this.mangas.length;
-       }
+    //    calcular() {
+    //        this.totalMangas = this.mangas.length;
+    //    }
     },
     computed: {
         total: function() {

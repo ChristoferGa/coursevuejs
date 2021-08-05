@@ -100,7 +100,7 @@
 
               <ul id="dropdown3" class="dropdown-content">
                 <li>
-                  <router-link to="/Ejercicio11"> Ejercicio 16 </router-link>
+                  <router-link to="/Ejercicio16"> Ejercicio 16 </router-link>
                 </li>
 
                 <li>

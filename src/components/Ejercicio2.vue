@@ -22,7 +22,7 @@ export default {
             msg: null
         }
     },
-    mounted () {
+    mounted() {
         this.interval = setInterval(() => {
             this.count++;
         }, 1000);
