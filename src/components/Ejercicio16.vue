@@ -2,8 +2,8 @@
   <div class="container">
     <h1>{{ title }}</h1>
     <p>{{msg}}</p>
-    <button @click="msg = 'Nuevo valor'">Actualizar</button>
-    <button @click="destroy()">Destroy</button>
+    <button @click="actualizar">Actualizar</button>
+    <button @click="destroy" v-show="msg">Destroy</button>
   </div>
 </template>
 
@@ -25,10 +25,7 @@ export default {
     console.log('Antes de montar la aplicación - beforeMount() el mensaje es ' + this.msg);
   },
   mounted() {
-      console.log('Aplicación montada - mounted() el mensaje es ' + this.msg);
-    // setTimeout(function () {
-    //   console.log('Aplicación montada - mounted() el mensaje es ' + this.msg);
-    // }, 1000);
+    console.log('Aplicación montada - mounted() el mensaje es ' + this.msg);
   },
   beforeUpdate() {
     console.log("beforeUpdate()");
@@ -45,15 +42,16 @@ export default {
   },
   destroyed() {
     console.log('Destruyendo - destroyed()' + this.msg);
-    
+    alert('Se borro el valor de msg')
+    document.querySelector("p").innerHTML = '';
     
   },
   methods: {
-    
+    actualizar() {
+      this.msg = 'Nuevo valor'
+    },
     destroy() {
-        
-        this.$destroy();
-
+      this.$destroy();
     },
   },
 };

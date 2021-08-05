@@ -10,7 +10,7 @@
 
           <ul class="right hide-on-med-and-down">
             <li>
-              <a class="dropdown-trigger" href="#" data-target="dropdown">
+              <a class="dropdown-trigger" data-target="dropdown">
                 1ra parte<i class="material-icons right">arrow_drop_down</i>
               </a>
 
@@ -104,15 +104,15 @@
                 </li>
 
                 <li>
-                  <router-link to="/Ejercicio12"> Ejercicio 17 </router-link>
+                  <router-link to="/Ejercicio17"> Ejercicio 17 </router-link>
                 </li>
 
                 <li>
-                  <router-link to="/Ejercicio13"> Ejercicio 18 </router-link>
+                  <router-link to="/Ejercicio18"> Ejercicio 18 </router-link>
                 </li>
 
                 <li>
-                  <router-link to="/Ejercicio14"> Ejercicio 19 </router-link>
+                  <router-link to="/Ejercicio19"> Ejercicio 19 </router-link>
                 </li>
 
                 <li>
